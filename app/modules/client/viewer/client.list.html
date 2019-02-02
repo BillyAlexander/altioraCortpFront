@@ -1,0 +1,15 @@
+<a href="#/client/create" class="btn btn-default btn-block">
+    Registrar Cliente
+</a>
+
+<hr />
+
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="m in model">
+        <button class="btn btn-danger btn-xs pull-right" ng-click="retirar(m.id)" type="button">Retirar</button>
+        <a href="#/client/create/{{ m.id }}" class="btn btn-default btn-xs pull-right" style="margin-right:10px;">Editar</a>
+        <a href="#/order/create/{{ m.id }}" class="btn btn-primary btn-xs pull-right" style="margin-right:10px;">Orden</a>
+        <a href="#/order/list/{{ m.id }}"><b>{{ m.nameClient }}</b> {{ m.lastNameClient }} </a>
+    </li>
+</ul>
+

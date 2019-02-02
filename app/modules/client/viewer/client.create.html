@@ -1,0 +1,14 @@
+<h2 class="page-header">
+    {{ titulo }}
+</h2>
+
+<form ng-submit="guardar()">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nombre" ng-model="nameClient">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Apellido" ng-model="lastNameClient">
+    </div>    
+    <a href="#/" class="btn btn-danger">Cancelar</a>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

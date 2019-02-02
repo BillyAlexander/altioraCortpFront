@@ -1,0 +1,12 @@
+<h1  >
+    Lista de Ordenes
+</h1>
+
+<hr />
+
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="m in orderList">
+        <b>Id: {{ m.id }}</b> Fecha: {{ m.dateOrder  | date:'yyyy-MM-dd HH:mm:ss' }} 
+    </li>
+</ul>
+<a href="#/" class="">Regresar</a>

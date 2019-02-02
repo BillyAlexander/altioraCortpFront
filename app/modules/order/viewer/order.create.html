@@ -1,0 +1,21 @@
+<h2 class="page-header">
+        Realizar Orden
+    </h2>
+    
+    <form ng-submit="guardarOrder()">
+        <div class="form-group">
+            <select multiple
+                    data-placeholder="-- Seleccione --"
+                    class="form-control m-b"
+                    id="items"
+                    name="items"
+                    ng-model="items_selected"
+                    ng-options="item.id as item.nameItem for item in items">
+                <option value=""></option>
+            </select>
+        </div>    
+        <a href="#/" class="btn btn-danger">Cancelar</a>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+    
+    
